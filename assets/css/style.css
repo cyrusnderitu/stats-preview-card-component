@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+
+:root{
+
+    --primary-FF: 'Lexend Deca', sans-serif;
+    --secondary-FF: 'Lexend Deca', sans-serif;
+    --title-color: hsl(0, 0%, 100%);
+    --text-color: hsla(0, 0%, 100%, 0.75);
+    --body-color: hsl(233, 47%, 7%);
+    --bg-color: hsl(244, 38%, 16%);
+    --highlight-color: hsl(277, 64%, 61%);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: var(--primary-FF);
+    min-height: 100vh;
+    background-color: var(--body-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 2rem;
+}
+p{
+    color: var(--text-color);
+    font-size: 400;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+h4{
+    color: var(--title-color);
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+span{
+    color: var(--highlight-color);
+}
+.stats_card{
+    width: 80%;
+    display: flex;
+    background-color: var(--bg-color);
+    border-radius: .5rem;
+    overflow: hidden;
+}
+.stats_content,
+.stats_display{
+    flex: 1;
+}
+.stats_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 4rem 6rem;
+}
+.stats_desc{
+    font-size: 15px;
+    margin-bottom: 2.5rem;
+}
+.stats_title span{
+    color: var(--highlight-color);
+}
+.stats_numbers{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--secondary-FF);
+}
+.stats_num{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--title-color);
+}
+.stats_num span{
+    color: var(--text-color);
+    font-size: 12px;
+    font-weight: initial;
+    text-transform: uppercase;
+}
+.stats_display{
+    position: relative;
+}
+.stats_screen{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: var(--highlight-color);
+    opacity: 0.6;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
