@@ -128,7 +128,7 @@ img{
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
-        font-size: 1.25rem;
+        font-size: 1.75rem;
         font-weight: 500;
         color: var(--title-color);
     }
@@ -140,11 +140,34 @@ img{
     }
 }
 @media screen and (max-width: 768px) {
+    .stats_title{
+        font-size: 1.25rem;
+    }
     .stats_content{
         display: flex;
         flex-direction: column;
         justify-content: center;
         padding: 2rem;
+    }
+    .stats_desc{
+        font-size: 10px;
+        margin-bottom: 1.5rem;
+    }
+    .stats_numbers{
+        display: flex;
+        justify-content: flex-start;
+        column-gap: 1.5rem;
+        align-items: center;
+        font-family: var(--secondary-FF);
+    }
+    .stats_num{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: var(--title-color);
     }
 }
 @media screen and (max-width: 435px) {
